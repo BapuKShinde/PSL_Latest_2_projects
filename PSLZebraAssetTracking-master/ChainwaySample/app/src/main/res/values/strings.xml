@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PSL</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="confirm_upload">Do you want to Upload ?</string>
+    <string name="confirm_cancel">Are you sure,you want to cancel Inventory?</string>
+    <string name="confirm_save">Do you want to save ?</string>
+    <string name="action_offline">Please Take action on listed inventory</string>
+    <string name="uhf_setting_failed">UHF Initialization Failed</string>
+
+
+    <string name="reader_not_registered">RFID reader not registered. Contact i-TEK.</string>
+    <string name="internet_error">No mobile/GPRS signal.</string>
+    <string name="communication_error">Error in communication with server.</string>
+    <string name="something_error">Something went wrong .please try again.</string>
+    <string name="inactive_internet">No internet connection found, Please check your internet connection and try again.</string>
+    <string name="get_transaction_progress_message">Please wait...\nGetting Transactions Types</string>
+    <string name="get_tasks_progress_message">Please wait...\nGetting Tasks</string>
+
+
+    <string name="enter_config_url">Enter Valid URL</string>
+    <string name="url_not_config">Please Config SERVER URL from menu</string>
+    <string name="url_validation">SERVER URL Validated successfully\nDo you want to set up ?</string>
+    <string name="url_config_success">SERVER URL Configured successfully</string>
+    <string name="url_config_error">Error in SERVER URL validation</string>
+</resources>

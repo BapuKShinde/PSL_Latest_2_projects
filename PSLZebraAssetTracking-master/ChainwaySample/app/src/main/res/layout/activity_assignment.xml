@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/psl_background"
+    tools:context="com.zebra.pslsdksample.AssignmentActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textStatus"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Status : "/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/stroke_background"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textTruckNumberText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="Truck No:"/>
+                <TextView
+                    android:id="@+id/textTruckNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text=""/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Location"/>
+            <Spinner
+                android:id="@+id/spLocation"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_spinner"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Laddle"/>
+            <Spinner
+                android:id="@+id/spLaddle"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_spinner"
+                android:layout_height="50dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:background="@drawable/stroke_background"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="80dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".8"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:id="@+id/textTaskNumberText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:textSize="20sp"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:text="Task No:"/>
+                        <TextView
+                            android:id="@+id/textTaskNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:textSize="20sp"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:text=""/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_height="0.5dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:id="@+id/textCastNumberText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="Cast No:"/>
+                        <TextView
+                            android:id="@+id/textCastNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text=""/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/login_button_background"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    />
+
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/clear_button_background"
+                    android:text="Clear"
+                    android:textAllCaps="false" />
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/clear_button_background"
+                    android:text="Back"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textLocationDetails"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Details"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

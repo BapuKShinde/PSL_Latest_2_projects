@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="colorbutton">#3a83e8</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#3B803B</color>
+    <color name="greens">#00ff00</color>
+    <color name="yellow">#ffff00</color>
+    <color name="gray">#808080</color>
+
+
+
+
+    <color name="white1">#eeeeee</color>
+    <color name="black1">#313a4d</color>
+    <color name="gray1">#dbdbdb</color>
+    <color name="gray2">#ababab</color>sssssss
+    <color name="gray3">#ededed</color>
+    <color name="red1">#db2627</color>
+    <color name="red2">#db2829</color>
+    <color name="red3">#22FF0000</color>
+    <color name="red4">#88FF0000</color>
+    <color name="red5">#aaFF0000</color>
+    <color name="gold">#FFD700</color>
+    <color name="green1">#22008000</color>
+    <color name="green2">#88008000</color>
+    <color name="green3">#aa008000</color>
+    <color name="blue1">#2095ac</color>
+    <color name="blue2">#2398bc</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FF5900</color>
+    <color name="lemonyellow">#FFFACD</color>
+    <color name="graywhite">#F5F5F5</color>
+    <color name="grayslate">#708090</color>
+    <color name="lightblue">#0083FF</color>
+    <color name="background1">#366d9b</color>
+
+</resources>

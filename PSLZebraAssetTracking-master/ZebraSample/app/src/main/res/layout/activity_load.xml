@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/psl_background"
+    tools:context="com.zebra.rfid.demo.pslsdksample.LoadActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textStatus"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Status : "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transaction Type"/>
+            <Spinner
+                android:id="@+id/spTransactionType"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_spinner"
+                android:layout_height="46dp">
+
+            </Spinner>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Material"/>
+            <Spinner
+                android:id="@+id/spMaterial"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_spinner"
+                android:layout_height="46dp">
+
+            </Spinner>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source"/>
+            <Spinner
+                android:id="@+id/spSource"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_spinner"
+                android:layout_height="46dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destination"/>
+            <Spinner
+                android:id="@+id/spDestination"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_spinner"
+                android:layout_height="46dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:background="@drawable/stroke_background"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="65dp">
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_weight=".8"
+                   android:orientation="vertical"
+                   android:layout_height="match_parent">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:orientation="horizontal"
+                       android:layout_height="32dp">
+
+                       <TextView
+                           android:id="@+id/textTaskNumberText"
+                           android:layout_width="45dp"
+                           android:layout_height="46dp"
+                           android:layout_gravity="center_vertical"
+                           android:gravity="center_vertical"
+                           android:text="Task No:"
+                           android:textColor="@color/black" />
+                       <TextView
+                           android:id="@+id/textTaskNumber"
+                           android:layout_width="match_parent"
+                           android:layout_height="32dp"
+                           android:layout_gravity="center_vertical"
+                           android:textColor="@color/black"
+                           android:gravity="center_vertical"
+                           android:text=""/>
+                   </LinearLayout>
+
+                   <View
+                       android:layout_width="match_parent"
+                       android:background="@color/white"
+                       android:layout_height="0.5dp"/>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:orientation="horizontal"
+                       android:layout_height="32dp">
+                       <TextView
+                           android:id="@+id/textTruckNumberText"
+                           android:layout_width="wrap_content"
+                           android:layout_height="32dp"
+                           android:textColor="@color/black"
+                           android:layout_gravity="center_vertical"
+                           android:gravity="center_vertical"
+                           android:text="Truck No:"/>
+                       <TextView
+                           android:id="@+id/textTruckNumber"
+                           android:layout_width="match_parent"
+                           android:layout_height="32dp"
+                           android:textColor="@color/black"
+                           android:layout_gravity="center_vertical"
+                           android:gravity="center_vertical"
+                           android:text=""/>
+                   </LinearLayout>
+
+               </LinearLayout>
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"/>
+                <Button
+                    android:id="@+id/btnDetails"
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/login_button_background"
+                    android:text="Details"
+                    android:textAllCaps="false"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/login_button_background"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    />
+
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/clear_button_background"
+                    android:text="Clear"
+                    android:textAllCaps="false" />
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/clear_button_background"
+                    android:text="Back"
+                    android:textAllCaps="false" />
+                <Button
+                    android:id="@+id/btnLock"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/clear_button_background"
+                    android:text="Lock"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

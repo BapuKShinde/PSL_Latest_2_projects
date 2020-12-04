@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/psl_background"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.zebra.rfid.demo.pslsdksample.LoginActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/psl_bar">
+
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight=".7">
+
+        <ImageView
+            android:id="@+id/btnSyncTransactions"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/psl_refresh_enable"/>
+
+        <EditText
+            android:id="@+id/edtLoginId"
+            android:background="@drawable/edt_normal_background"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:background="@drawable/edt_normal_background"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+        <CheckBox
+            android:id="@+id/chkRemember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:text="Remember User"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/login_button_background"
+                android:padding="5dp"
+                android:text="Log IN"
+                android:textAllCaps="false"
+                />
+
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/clear_button_background"
+                android:text="Clear"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_weight=".30">
+        <Button
+            android:id="@+id/btnChangePassword"
+            android:layout_width="250dp"
+            android:background="@drawable/clear_button_background"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:text="Change Password"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:gravity="center_vertical|end"
+        android:layout_marginBottom="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginRight="10dp"
+        android:text="Version:V-1.0"/>
+   <!-- <TextView
+        android:id="@+id/textCopyRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="©2020 Perceptron Software Labs Pvt.Ltd"/>
+    <TextView
+        android:id="@+id/textCopyRightReserved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="All rights reserved"/>-->
+
+</LinearLayout>

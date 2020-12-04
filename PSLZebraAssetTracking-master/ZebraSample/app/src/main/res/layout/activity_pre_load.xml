@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/psl_background"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.zebra.rfid.demo.pslsdksample.PreLoadActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Source Plant"/>
+    <Spinner
+        android:id="@+id/spSourcePlant"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_spinner"
+        android:layout_height="46dp">
+
+    </Spinner>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/login_button_background"
+            android:text="Next"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            />
+
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/clear_button_background"
+            android:text="Back"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>
